@@ -10,13 +10,19 @@ function display(event){
     imageReader.readAsDataURL(image.files[0])
     imageReader.onload=function(){
         uploadedImage.src = imageReader.result;
-        console.log(reader.result);
+        // console.log(reader.result);
     }
     
+    var jsonText = "";
     var reader = new FileReader();
     reader.readAsText(json.files[0]);
     reader.onload=function(){
-        jsonOutput.innerHTML = reader.result;
-        console.log(reader.result);
+        var jsonArray = JSON.parse(reader.result);
+        // console.log(JSON.parse(reader.result));
+        // console.log(jsonArray["name"]);
+        for (var key in jsonArray){
+            jsonText = jsonText + key + ": " + jsonArray[key] + "<br>";
+        }
+        jsonOutput.innerHTML = jsonText;
     }
 }
