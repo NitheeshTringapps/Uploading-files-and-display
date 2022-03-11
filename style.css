@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.upload{
+    height: 50%;
+    border: 2px solid #000000;
+}
+.display{
+    height: 50%;
+    border: 2px solid #000000;
+}

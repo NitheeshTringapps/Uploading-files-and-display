@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploading files and display</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="upload">
+        <h1>Upload an image and a json file</h1>
+        <form method="get">
+            <input type="file" id="image" name="image" accept="image/*"><br><br>
+            <input type="file" id="json" name="json" accept=".json"><br><br>
+            <button type="submit" onclick="display(event)">Submit</button>
+        </form>
+    </div>
+    <div class="display">
+        <h1>Your uploaded files are:</h1><br>
+        <img id="uploadedImage" style="width: 500px;" alt="Your uploaded image">
+        <p id="jsonOutput"></p>
+    </div>
+</body>
+</html>
