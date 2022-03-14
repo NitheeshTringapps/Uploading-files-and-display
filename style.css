@@ -1,12 +1,30 @@
 body{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .upload{
+    margin: auto;
     height: 50%;
+    width: 80%;
     border: 2px solid #000000;
+    padding: 100px;
 }
 .display{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
     height: 50%;
+    width: 80%;
     border: 2px solid #000000;
+    padding: 100px;
+}
+#uploadedImage{
+    width: 50%;
+}
+p{
+    text-align: left;
+    align-items: center;
+    padding-left: 2%;
+    width: 50%;
 }
